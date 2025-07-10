@@ -23,5 +23,3 @@ dictionary = {"name": str("John Doe"), "age":int(22)}; #print(dictionary["name"]
     
 #Boolean
 isStudent= True; isGraduated = False; print(f"Student:\t{isStudent}\nGraduate:\t{isGraduated}")
-
-
