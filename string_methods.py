@@ -47,3 +47,7 @@ var = str("apple, banana, orange").rsplit(", ")
 
 var = str("Hello World").replace("World", "I love Python!!") #replace("original word", "word to replace")
 #print(f"\"replace()\" Replaces a word in string: \"{var}\"")
+
+var = ("John", "Peter", "Vicky")
+joined = "#".join(var) #reassigning is important in join methods
+#print(f"\"join()\" Joins all items in a tuple into a string, using  a has character as separator: \"{joined}\"")
