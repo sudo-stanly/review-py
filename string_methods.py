@@ -51,3 +51,32 @@ var = str("Hello World").replace("World", "I love Python!!") #replace("original 
 var = ("John", "Peter", "Vicky")
 joined = "#".join(var) #reassigning is important in join methods
 #print(f"\"join()\" Joins all items in a tuple into a string, using  a has character as separator: \"{joined}\"")
+
+
+#placeholder
+    #Example 1:
+a, b="Tony Stark", 22
+txt = "I am {0}, I am {1}.".format(a, b)
+print(txt)
+
+    #Example 2: 'single placeholder'
+a, b="Python", 20
+txt = "This sentence is written in {}".format(a)
+print(txt)
+txt = "I am {} years old.".format(b)
+print(txt)
+
+    #Example 3: using data types in formatting and multiple placeholders
+    #each placeholder must correspond to the following values inserted in the format. Syntax: "{}{}".format(value1,value2..)
+txt=str("The {} fox jumps over the {}").format("red", "fence")
+print(txt)
+txt=str("I am {} and i am {} years old learning {}").format("Masaru", 20, "Python")
+print(txt)
+
+    #Example 4: decimal precision by using {0:f} floating point representation
+print("This website is {:.6f}% secured".format(100)) #6 decimal places
+print("My average of this semester was {:.2f}".format(75.91829182984)) #2 decimal places
+
+    #Example 5: Turning integer into binary and octal by using :b and :o
+print("The {} of 100 is {:b}".format("Binary", 100))
+print("The {} of 100 is {:o}".format("Octal", 100))
